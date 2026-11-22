@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Separa a logo dos botões */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #1e293b;
+  padding: 16px 32px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-botoes {
+  display: flex;
+  gap: 16px; /* Espaçamento entre os três botões */
+  align-items: center;
+}
+
+.nav-btn {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+/* Estilo opcional para destacar o terceiro botão */
+.btn-destaque {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-destaque:hover {
+  background-color: #2563eb;
+}

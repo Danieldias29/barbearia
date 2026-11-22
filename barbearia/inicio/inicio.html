@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styl2.css">
+<link rel="stylesheet" href="styl3.css">
+<link rel="stylesheet" href="styl4.css">
+<link rel="stylesheet" href="styl5.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <!-- Logo (pode ser texto ou tag <img>) -->
+    <a href="#" class="logo">MinhaLogo</a>
+
+    <!-- Três botões de navegação -->
+    <div class="nav-botoes">
+      <a href="#inicio" class="nav-btn">Início</a>
+      <a href="#servicos" class="nav-btn">Serviços</a>
+      <a href="#contato" class="nav-btn btn-destaque">loga</a>
+      <a href="../tela_de_cadratro\cadrastro.php" class="nav-btn btn-destaque">Cadrastrar</a>
+    </div>
+    </nav>
+
+  <!--uma hero com texto e um botao-->
+    <section class="hero">
+    <div class="hero-conteudo">
+      <h1>Transforme suas ideias em realidade</h1>
+      <p>Soluções digitais rápidas, modernas e sob medida para o seu negócio crescer.</p>
+      <a href="../tela_de_cadratro\cadrastro.php" class="btn-cta">Começar agora</a>
+    </div>
+    
+    </section>
+
+<!--um carrocel com tres imagems-->
+    <div class="carrossel">
+    <div class="carrossel-slides" id="slides">
+      <img src="https://www.google.com/imgres?q=fotos&imgurl=https%3A%2F%2Fciclovivo.com.br%2Fwp-content%2Fuploads%2F2022%2F03%2Ffoto-mundo-natural-ciclo.jpg&imgrefurl=https%3A%2F%2Fciclovivo.com.br%2Finovacao%2Finspiracao%2Fas-fotos-mais-impressionantes-do-mundo-natural%2F&docid=_lVEO9Cjmyzw4M&tbnid=fgDDOegpEDREJM&vet=12ahUKEwjT07LGhIqYAxXRRjABHbnJHscQnPAOegQIQBAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwjT07LGhIqYAxXRRjABHbnJHscQnPAOegQIQBAA" alt="Paisagem 1">
+      <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/14872092246392.webp?w=1190&h=794" alt="Paisagem 2">
+      <img src="https://www.google.com/imgres?q=fotos&imgurl=https%3A%2F%2Fimg.magnific.com%2Ffotos-gratis%2Fpaisagem-natural-com-moldura-de-mao_23-2149389986.jpg%3Fsemt%3Dais_hybrid%26w%3D740%26q%3D80&imgrefurl=https%3A%2F%2Fwww.magnific.com%2Fbr%2Ffotos%2Ffotograf%25C3%25ADas&docid=Kv9luQeabmwnsM&tbnid=6rHH7hXAf7VGKM&vet=12ahUKEwjT07LGhIqYAxXRRjABHbnJHscQnPAOegQIORAA..i&w=529&h=740&hcb=2&ved=2ahUKEwjT07LGhIqYAxXRRjABHbnJHscQnPAOegQIORAA" alt="Paisagem 3">
+    </div>
+
+    <button class="btn anterior" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="btn proximo" onclick="mudarSlide(1)">&#10095;</button>
+    </div>
+
+    <section class="planos-secao" id="planos">
+    <div class="planos-cabecalho">
+      <h2>Nossos Planos</h2>
+      <p>Escolha a opção ideal para o momento do seu negócio.</p>
+    </div>
+
+    <div class="planos-container">
+      <!-- Plano 1: Básico -->
+      <div class="plano-card">
+        <h3>Básico</h3>
+        <div class="preco">R$ 49<span>/mês</span></div>
+        <ul class="beneficios">
+          <li>✓ 1 Projeto ativo</li>
+          <li>✓ Suporte por e-mail</li>
+          <li>✓ 5 GB de armazenamento</li>
+          <li class="indisponivel">✕ Relatórios avançados</li>
+        </ul>
+        <a href="#assinar-basico" class="btn-plano">Assinar Básico</a>
+      </div>
+
+      <!-- Plano 2: Profissional (Destaque) -->
+      <div class="plano-card destaque">
+        <span class="selo">Mais Popular</span>
+        <h3>Profissional</h3>
+        <div class="preco">R$ 99<span>/mês</span></div>
+        <ul class="beneficios">
+          <li>✓ Até 10 Projetos ativos</li>
+          <li>✓ Suporte prioritário 24/7</li>
+          <li>✓ 50 GB de armazenamento</li>
+          <li>✓ Relatórios avançados</li>
+        </ul>
+        <a href="#assinar-pro" class="btn-plano btn-destaque">Assinar Pro</a>
+      </div>
+
+      <!-- Plano 3: Empresarial -->
+      <div class="plano-card">
+        <h3>Empresarial</h3>
+        <div class="preco">R$ 199<span>/mês</span></div>
+        <ul class="beneficios">
+          <li>✓ Projetos ilimitados</li>
+          <li>✓ Gerente de conta dedicado</li>
+          <li>✓ 500 GB de armazenamento</li>
+          <li>✓ Relatórios personalizados</li>
+        </ul>
+        <a href="#assinar-empresa" class="btn-plano">Falar com Vendas</a>
+      </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-conteudo">
+      <!-- Coluna 1: Sobre -->
+      <div class="footer-coluna">
+        <h3>MinhaEmpresa</h3>
+        <p>Oferecendo soluções criativas e eficientes para transformar a sua presença digital.</p>
+      </div>
+
+      <!-- Coluna 2: Links Rápidos -->
+      <div class="footer-coluna">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#privacidade">Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Contato -->
+      <div class="footer-coluna">
+        <h4>Contato</h4>
+        <p>Email: contato@minhaempresa.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>Endereço: Av. Paulista, 1000 - São Paulo, SP</p>
+      </div>
+    </div>
+
+    <!-- Barra de Copyright -->
+    <div class="footer-base">
+      <p>&copy; 2026 MinhaEmpresa. Todos os direitos reservados.</p>
+    </div>
+    </footer>
+
+ <script src="movimento.js"></script>
+    
+</body>
+</html>
